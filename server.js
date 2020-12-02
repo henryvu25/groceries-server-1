@@ -7,7 +7,7 @@ var methodOverride = require('method-override');
 var cors = require('cors');
 
 // Configuration
-mongoose.connect(process.env.MONGODB_URI || "https://henry-groceries.herokuapp.com");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://iad2-c10-0.mongo.objectrocket.com:54542,iad2-c10-2.mongo.objectrocket.com:54542,iad2-c10-1.mongo.objectrocket.com:54542/?replicaSet=026f9af2627446e0a93c71defa9b4cb1&ssl=true");
 
 app.use(bodyParser.urlencoded({'extended': 'true'}));
 app.use(bodyParser.json());
